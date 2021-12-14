@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+}
+
+.section{
+    display: grid;
+    grid-template-rows: 70px auto;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .caja{
+    text-align: center;
+}
+.header .caja h2{
+    margin-bottom: 5px;
+}
+
+.contain{
+    background-color: rgb(63, 62, 62);
+    position: relative;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/*animaciones*/
+.fade-in{animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both}
+@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
